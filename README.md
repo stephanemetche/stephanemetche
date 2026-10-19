@@ -49,10 +49,10 @@ Je monte des labs, je les documente ici, et je n'affiche que ce que j'ai réelle
 | Projet | Description | Domaine | Mis à jour |
 |---|---|---|---|
 | [**zabbix-monitoring-lab**](https://github.com/stephanemetche/zabbix-monitoring-lab) | Supervision d'un Debian et d'un Windows Server avec Zabbix 7.0 : agents, test d'alerte, résolution | Supervision · Linux · Windows | 17/10/2026 |
-| [**linux-server-setup**](https://github.com/stephanemetche/linux-server-setup) | Installation et sécurisation d'un serveur Linux : utilisateurs, SSH, pare-feu | Systèmes · Sécurité | |
-| [**Linux-fundamentals**](https://github.com/stephanemetche/Linux-fundamentals) | Fondamentaux de Linux et parcours d'apprentissage | Systèmes | |
-| [**bash-loops-training**](https://github.com/stephanemetche/bash-loops-training) | Automatisation de tâches avec les boucles Bash | Automatisation | |
-| [**the-cuve**](https://github.com/stephanemetche/the-cuve) | MVP SaaS d'aide à la décision pour les viticulteurs | Développement | |
+| [**linux-server-setup**](https://github.com/stephanemetche/linux-server-setup) | Installation et sécurisation d'un serveur Linux : utilisateurs, SSH, pare-feu | Systèmes · Sécurité | 13/10/2026 |
+| [**Linux-fundamentals**](https://github.com/stephanemetche/Linux-fundamentals) | Fondamentaux de Linux et parcours d'apprentissage | Systèmes | 18/03/2026 |
+| [**bash-loops-training**](https://github.com/stephanemetche/bash-loops-training) | Automatisation de tâches avec les boucles Bash | Automatisation | 05/05/2026 |
+| [**the-cuve**](https://github.com/stephanemetche/the-cuve) | MVP SaaS d'aide à la décision pour les viticulteurs | Développement | 01/05/2026 |
 <!--PROJECTS:END-->
 
 *Ce tableau est régénéré automatiquement par GitHub Actions à partir de `projects.json`.*
