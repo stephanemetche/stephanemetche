@@ -1,0 +1,7 @@
+[
+  {"repo": "zabbix-monitoring-lab", "description": "Supervision d'un Debian et d'un Windows Server avec Zabbix 7.0 : agents, test d'alerte, résolution", "domain": "Supervision · Linux · Windows"},
+  {"repo": "linux-server-setup", "description": "Installation et sécurisation d'un serveur Linux : utilisateurs, SSH, pare-feu", "domain": "Systèmes · Sécurité"},
+  {"repo": "Linux-fundamentals", "description": "Fondamentaux de Linux et parcours d'apprentissage", "domain": "Systèmes"},
+  {"repo": "bash-loops-training", "description": "Automatisation de tâches avec les boucles Bash", "domain": "Automatisation"},
+  {"repo": "the-cuve", "description": "MVP SaaS d'aide à la décision pour les viticulteurs", "domain": "Développement"}
+]

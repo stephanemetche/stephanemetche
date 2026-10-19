@@ -1,42 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 230" width="780" height="230" role="img" aria-labelledby="t d">
-  <title id="t">Mon infrastructure</title>
-  <desc id="d">Schéma : administrateur, pare-feu, serveur Debian, Docker, services GLPI Zabbix DNS</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" role="img" aria-labelledby="t d">
+  <title id="t">Schéma du lab de supervision</title>
+  <desc id="d">Un serveur Debian avec Zabbix supervise un Windows Server via l'agent Zabbix sur le port 10050, filtré par le pare-feu Windows.</desc>
   <defs>
-    <marker id="a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
-      <path d="M2 1L8 5L2 9" fill="none" stroke="#8b949e" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-    </marker>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#2dd4bf"/></marker>
+    <style>
+      text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+      .t{fill:#e6edf3;font-size:16px;font-weight:700}
+      .s{fill:#8b949e;font-size:12px}
+      .p{fill:#2dd4bf;font-size:13px;font-weight:700}
+      .o{fill:#f59e0b;font-size:12px;font-weight:700}
+    </style>
   </defs>
-  <rect width="780" height="230" rx="14" fill="#0d1117"/>
-  <text x="390" y="42" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600" fill="#e6edf3">Mon infrastructure (homelab)</text>
+  <rect width="900" height="300" rx="14" fill="#0d1117" stroke="#30363d"/>
+  <text x="450" y="38" text-anchor="middle" class="s">LAB DE SUPERVISION · VMware Fusion · réseau 192.168.209.0/24</text>
 
-  <g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
-    <rect x="20" y="85" width="128" height="76" rx="10" fill="#161b22" stroke="#a371f7" stroke-width="1.5"/>
-    <text x="84" y="116" font-size="14" font-weight="600" fill="#e6edf3">Stéphane</text>
-    <text x="84" y="137" font-size="11" fill="#8b949e">Administrateur</text>
+  <rect x="60" y="80" width="260" height="150" rx="10" fill="#161b22" stroke="#2dd4bf" stroke-width="1.5"/>
+  <text x="190" y="115" text-anchor="middle" class="t">srv-linux-01</text>
+  <text x="190" y="138" text-anchor="middle" class="s">Debian 13 · 192.168.209.129</text>
+  <text x="190" y="170" text-anchor="middle" class="p">Zabbix Server 7.0.31</text>
+  <text x="190" y="192" text-anchor="middle" class="s">MariaDB · Apache · Frontend web</text>
 
-    <rect x="172" y="85" width="128" height="76" rx="10" fill="#161b22" stroke="#f0883e" stroke-width="1.5"/>
-    <text x="236" y="116" font-size="14" font-weight="600" fill="#e6edf3">Pare-feu</text>
-    <text x="236" y="137" font-size="11" fill="#8b949e">SSH par clés, filtrage</text>
+  <rect x="580" y="80" width="260" height="150" rx="10" fill="#161b22" stroke="#2dd4bf" stroke-width="1.5"/>
+  <text x="710" y="115" text-anchor="middle" class="t">srv-windows-01</text>
+  <text x="710" y="138" text-anchor="middle" class="s">Windows Server 2025 · 192.168.209.130</text>
+  <text x="710" y="170" text-anchor="middle" class="p">Zabbix Agent 2</text>
+  <text x="710" y="192" text-anchor="middle" class="s">Service « Zabbix Agent 2 »</text>
 
-    <rect x="324" y="85" width="128" height="76" rx="10" fill="#161b22" stroke="#3fb950" stroke-width="1.5"/>
-    <text x="388" y="116" font-size="14" font-weight="600" fill="#e6edf3">Serveur Debian</text>
-    <text x="388" y="137" font-size="11" fill="#8b949e">durci, à jour</text>
+  <line x1="322" y1="155" x2="578" y2="155" stroke="#2dd4bf" stroke-width="2" marker-end="url(#a)"/>
+  <text x="450" y="140" text-anchor="middle" class="p">TCP 10050</text>
+  <text x="450" y="178" text-anchor="middle" class="s">vérifications passives</text>
+  <rect x="500" y="205" width="150" height="26" rx="6" fill="#0d1117" stroke="#f59e0b"/>
+  <text x="575" y="223" text-anchor="middle" class="o">Pare-feu : source .129 seule</text>
 
-    <rect x="476" y="85" width="128" height="76" rx="10" fill="#161b22" stroke="#58a6ff" stroke-width="1.5"/>
-    <text x="540" y="116" font-size="14" font-weight="600" fill="#e6edf3">Docker</text>
-    <text x="540" y="137" font-size="11" fill="#8b949e">services isolés</text>
-
-    <rect x="628" y="85" width="128" height="76" rx="10" fill="#161b22" stroke="#d2a8ff" stroke-width="1.5"/>
-    <text x="692" y="116" font-size="13" font-weight="600" fill="#e6edf3">GLPI · Zabbix · DNS</text>
-    <text x="692" y="137" font-size="11" fill="#8b949e">parc et supervision</text>
-  </g>
-
-  <g stroke="#8b949e" stroke-width="1.5" fill="none" marker-end="url(#a)">
-    <path d="M150 123 H170"/>
-    <path d="M302 123 H322"/>
-    <path d="M454 123 H474"/>
-    <path d="M606 123 H626"/>
-  </g>
-
-  <text x="390" y="205" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#8b949e">Sécuriser, superviser, documenter</text>
+  <text x="450" y="272" text-anchor="middle" class="s">Test : arrêt de l'agent → PROBLEM en 3 min → redémarrage → RESOLVED</text>
 </svg>
